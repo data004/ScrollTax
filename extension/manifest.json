@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "ScrollTax Tracker",
+  "version": "1.0",
+  "description": "Monitors screen time on X and triggers Binance Agent OS penalties.",
+  "permissions": ["tabs"],
+  "host_permissions": [
+    "*://*.x.com/*",
+    "*://twitter.com/*",
+    "http://localhost:3000/*",
+    "https://*.vercel.app/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
